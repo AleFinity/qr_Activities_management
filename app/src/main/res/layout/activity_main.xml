@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/mainButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/scanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="64dp"
+            android:background="#1144AA"
+            android:minWidth="300dp"
+            android:minHeight="64dp"
+            android:text="Информация о МА"
+            android:textAllCaps="false"
+            android:textColor="#FAFCFF"
+            android:textSize="24sp"></Button>
+
+        <Button
+            android:id="@+id/giveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#1144AA"
+            android:textColor="#FAFCFF"
+            android:minWidth="300dp"
+            android:minHeight="64dp"
+            android:text="Передача МА"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/emplBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#1144AA"
+            android:textColor="#FAFCFF"
+            android:minWidth="300dp"
+            android:minHeight="64dp"
+            android:text="Выдача МА"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/replaceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#1144AA"
+            android:textColor="#FAFCFF"
+            android:minWidth="300dp"
+            android:textAllCaps="false"
+            android:minHeight="64dp"
+            android:text="Перемещение МА"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/repairBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#1144AA"
+            android:textColor="#FAFCFF"
+            android:minWidth="300dp"
+            android:minHeight="64dp"
+            android:textAllCaps="false"
+            android:text="Ремонт МА"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/inventarizationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#1144AA"
+            android:textColor="#FAFCFF"
+            android:minWidth="300dp"
+            android:minHeight="64dp"
+            android:text="Инвентаризация"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Логин"
+            android:textStyle="bold"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:height="35dp"
+            android:background="#4A90ADD3"
+            android:hint="login@mirea.ru"
+            android:inputType="textEmailAddress"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Пароль"
+            android:textStyle="bold"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="250dp"
+            android:height="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:background="#4A90ADD3"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="#1144AA"
+            android:text="Авторизация"
+            android:textColor="#FAFCFF"
+            android:textSize="20sp"
+            android:layout_marginBottom="32dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameInv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="КВАНТОВЫЙ КОМПЬЮТЕР"
+            android:maxLines="3"
+            android:textColor="#272727"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/currentKafedraInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Текущий кабинет"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/currentRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="Asus zenbook"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/kafedraName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Новый кабинет"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/newNameKafedra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="32dp"
+            android:height="35dp"
+            android:background="#4A90ADD3"
+            android:completionThreshold="1"
+            android:spinnerMode="dropdown"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Состояние актива"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp">
+
+            <RadioButton
+                android:id="@+id/activRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Активирован"
+                android:textColor="#B3393939"
+                android:textSize="21sp" />
+
+            <RadioButton
+                android:id="@+id/sleepRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Складирован"
+                android:textColor="#B3393939"
+                android:textSize="21sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:background="#1144AA"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/giveBtn"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FAFCFF"
+            android:fontFamily="sans-serif-medium"
+            android:text="Переместить"
+            android:textAllCaps="false"
+            android:textColor="#1144AA"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

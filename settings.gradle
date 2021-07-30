@@ -1,0 +1,3 @@
+include ':Zxing'
+include ':app'
+rootProject.name = "qr"
